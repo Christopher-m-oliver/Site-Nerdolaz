@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Nerdolaz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #23232e;
+    height: 8vh;
+    padding: 0 20px; 
+}
+
+.logo-container {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+        .logo {
+            height: 25px;
+            margin-right: 5px;
+            width: 25px; 
+        }
+
+        .title {
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .nav-list {
+            list-style: none;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            width: 180px;
+            height: 280;
+            padding: 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 4px 4px 12px #aaaa;
+            margin: 8px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 130px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .card div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            height: 50%;
+            text-align: center;
+}
+
+        .card h1 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 0;
+        }
+
+        .card h2 {
+            font-size: 0.9rem;
+            color: #aaaa;
+            margin: 0;
+        }
+
+        .card span {
+            color: #777;
+            font-size: 0.8rem;
+            margin-top: 4px;
+        }
+
+        .card button {
+            background-color: #2192FF;
+            margin: 0;
+            display: 0;
+            height: 42px;
+            border: none;
+            padding: 4px;
+            width: 82%;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;    
+    
+}
+
+        .card button:hover {
+            background: #0056b3;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .cards-container {
+                padding: 2rem 1rem;
+                gap: 1rem;
+            }
+
+            .card {
+                width: 160px;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a class="title" href="/">
+            <img src="images/nerd.png" alt="Logo" class="logo">
+            Nerdolaz
+        </a>
+        <ul class="nav-list">
+            <li><a href="/">Início</a></li>
+        </ul>
+    </div>
+    
+    <div class="cards-container">
+        <div class="card">
+            <img src="images/python.png" alt="Curso de Python">
+            <h1>Python</h1>
+            <h2>Udemy</h2>
+            <span>PT-BR</span>
+            <a href="https://www.udemy.com/course/intro_python/"><button>Acessar Curso</button></a>        </div>
+
+        <div class="card">
+            <img src="images/java.png" alt="Curso de Java">
+            <h1>Java</h1>
+            <h2>Udemy</h2>
+            <span>PT-BR</span>
+            <a href="https://www.udemy.com/course/java-se-f1/"><button>Acessar Curso</button></a>
+        </div>
+
+        <div class="card">
+            <img src="images/JS.png" alt="Curso de JavaScript">
+            <h1>Javascript</h1>
+            <h2>Udemy</h2>
+            <span>PT-BR</span>
+            <a href="https://www.udemy.com/course/fundamentos-de-javascript-funcional/"><button>Acessar Curso</button></a>
+        </div>
+
+        <div class="card">
+            <img src="images/html.png" alt="Curso de HTML">
+            <h1>HTML</h1>
+            <h2>Udemy</h2>
+            <span>PT-BR</span>
+            <a href="https://www.udemy.com/course/introducao-a-linguagem-html/"><button>Acessar Curso</button></a>
+        </div>
+
+        <div class="card">
+            <img src="images/css.png" alt="Curso de CSS">
+            <h1>CSS</h1>
+            <h2>Udemy</h2>
+            <span>PT-BR</span>
+            <a href="https://www.udemy.com/course/introducao-a-linguagem-css/"><button>Acessar Curso</button></a>
+        </div>
+    </div>
+</body>
+</html>
